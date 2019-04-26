@@ -88,6 +88,9 @@ client.on('message', msg => {
   if (msg.content.toLowerCase() === 'sa') {
       msg.channel.sendMessage('Aleyküm Selam Hoşgeldin !');
 }
+if (msg.content.toLowerCase() === prefix + 'afk' ) {
+ msg.reply('Afk Kaldı!!!')
+}
 if (msg.content.toLowerCase() === prefix + 'kurucular' ) {
  msg.channel.sendMessage('Kurucular For Win Ve Sir Kandarov Pedovski')
 }
@@ -112,4 +115,4 @@ client.on('warn', e => {
 client.on('error', e => {
   console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
-client.login(process.env.BOT_TOKEN);
+client.login(ayarlar.token);

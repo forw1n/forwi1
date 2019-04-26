@@ -48,9 +48,9 @@ client.reload = command => {
 };
 
 client.on('guildBanAdd' , (guild, user) => {
-  let gelengiden = guild.channels.find('name', 'gelen-giden');
-  if (!gelengiden) return;
-  gelengiden.send('**AHHHAAAAA BİR KİŞİ DAHA BAN YEDİ** '+ user.username +'**SUÇ İŞLEMİŞ VE CEZA ALMIŞ UMARIM SENDE AYNI HATAYA DÜŞMEZSİN** ' );
+  let 🌟нgвує = guild.channels.find('name', '🌟нg-вує');
+  if (!🌟нgвує) return;
+  🌟нgвує.send('**AHHHAAAAA BİR KİŞİ DAHA BAN YEDİ** '+ user.username +'**SUÇ İŞLEMİŞ VE CEZA ALMIŞ UMARIM SENDE AYNI HATAYA DÜŞMEZSİN** ' );
 });
 
 client.load = command => {

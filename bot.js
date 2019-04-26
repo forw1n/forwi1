@@ -48,9 +48,9 @@ client.reload = command => {
 };
 
 client.on('guildBanAdd' , (guild, user) => {
-  let aramızakatılanlar = guild.channels.find('name', 'aramıza-katılanlar');
-  if (!aramızakatılanlar) return;
-  aramızakatılanlar.send('https://media.giphy.com/media/8njotXALXXNrW/giphy.gif **Adalet dağıtma zamanı gelmiş!** '+ user.username +'**Bakıyorum da suç işlemiş,Yargı dağıtmaya devam** :fist: :writing_hand:  :spy:' );
+  let gelengiden = guild.channels.find('name', 'gelen-giden');
+  if (!gelengiden) return;
+  gelengiden.send('**AHHHAAAAA BİR KİŞİ DAHA BAN YEDİ** '+ user.username +'**SUÇ İŞLEMİŞ VE CEZA ALMIŞ UMARIM SENDE AYNI HATAYA DÜŞMEZSİN** ' );
 });
 
 client.load = command => {
@@ -112,5 +112,4 @@ client.on('warn', e => {
 client.on('error', e => {
   console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
-
-client.login(process.env.BOT_TOKEN);
+client.login(ayarlar.token);

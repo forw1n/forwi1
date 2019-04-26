@@ -115,4 +115,4 @@ client.on('warn', e => {
 client.on('error', e => {
   console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
-client.login(process.env.BOT_TOKEN);
+client.login(ayarlar.token);
